@@ -1,0 +1,37 @@
+20,000 X-ray images
+
+Body parts : Elbow, Hand, and Shoulder
+
+72% training, 18% validation and 10% test
+Each generator to process and convert the filepaths into image arrays, and the labels into one-hot encoded labels.
+The resulting generators can then be used to train and evaluate a deep learning model.
+
+Starts with data augmentation and pre-processing the x-ray images - flip horizontal
+
+We use rgb 3 channels and 224x224 pixels images, use feature extracting , and average pooling
+
+ResNet50 neural network to classify the type of bone
+ResNet-50 is a convolutional neural network that is 50 layers deep. You can load a pretrained version of the neural network trained on more than a million images from the ImageNet database.
+
+
+4 pieces of code:
+
+Training Parts
+Training Fracture
+Prediction Test
+Predictions
+
+
+Libraries and their required versions:
+
+* customtkinter~=5.0.3
+* PyAutoGUI~=0.9.53
+* PyGetWindow~=0.0.9
+* Pillow~=8.4.0
+* numpy~=1.19.5
+* tensorflow~=2.6.2
+* keras~=2.6.0
+* pandas~=1.1.5
+* matplotlib~=3.3.4
+* scikit-learn~=0.24.2
+* colorama~=0.4.5
